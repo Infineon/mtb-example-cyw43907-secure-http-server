@@ -6,7 +6,7 @@
 *
 * Related Document: See README.md
 *******************************************************************************
-* $ Copyright 2021 Cypress Semiconductor $
+* $ Copyright 2021-2023 Cypress Semiconductor $
 *******************************************************************************/
 
 /*******************************************************************************
@@ -20,7 +20,7 @@
 #include <task.h>
 #include "cy_wcm.h"
 #include "cybsp.h"
-#include "cy_lwip.h"
+#include "cy_network_mw_core.h"
 #include "cyhal_gpio.h"
 
 /* Wi-Fi Credentials: Modify WIFI_SSID and WIFI_PASSWORD to match your Wi-Fi network

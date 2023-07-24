@@ -6,7 +6,7 @@
 *
 * Related Document: See README.md
 *******************************************************************************
-* $ Copyright 2021 Cypress Semiconductor $
+* $ Copyright 2021-2023 Cypress Semiconductor $
 *******************************************************************************/
 
 /* Header file includes */
@@ -543,7 +543,7 @@ cy_rslt_t mdns_responder_start(void)
     /* Start lwIP's MDNS responder.
      * MDNS is required to resolve the local domain name of the secure HTTP server.
      */
-    struct netif *net = cy_lwip_get_interface(CY_LWIP_STA_NW_INTERFACE);
+    struct netif *net = cy_network_get_nw_interface(CY_NETWORK_WIFI_STA_INTERFACE, 0);
 
     mdns_resp_init();
 
